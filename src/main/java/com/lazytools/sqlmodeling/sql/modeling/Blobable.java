@@ -1,7 +1,6 @@
-package com.lazytools.sqlmodeling.sql.modeling.object;
+package com.lazytools.sqlmodeling.sql.modeling;
 
 import java.io.InputStream;
-import java.sql.Blob;
 
 public interface Blobable {
 

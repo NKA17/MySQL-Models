@@ -1,6 +1,7 @@
 package com.lazytools.sqlmodeling.models;
 
-import com.lazytools.sqlmodeling.sql.modeling.object.Blobable;
+
+import com.lazytools.sqlmodeling.sql.modeling.Blobable;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -8,7 +9,7 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
-public class Test implements Blobable{
+public class Test implements Blobable {
     private int id;
     private String name;
     private BufferedImage image;

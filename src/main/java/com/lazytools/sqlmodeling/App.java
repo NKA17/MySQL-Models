@@ -3,7 +3,6 @@ package com.lazytools.sqlmodeling;
 import com.lazytools.sqlmodeling.models.Test;
 import com.lazytools.sqlmodeling.models.TestModeler;
 import com.lazytools.sqlmodeling.sql.basic.SQLBasics;
-import com.lazytools.sqlmodeling.sql.modeling.object.ModelBuilder;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -35,12 +34,12 @@ public class App
         Test t = tm.toObject(rs);
 
 
-//        t.setImage(bi);
-//        PreparedStatement ps = tm.toUpdateStatement(t,con,"name");
+        t.setImage(bi);
+        PreparedStatement ps = tm.toUpdateStatement(t,con);
 //        ps.executeUpdate();
-//        System.out.println(ps.toString());
+        System.out.println(ps.toString());
 
-        displayPicture(t.getImage());
+        //displayPicture(t.getImage());
 
         con.close();
     }
